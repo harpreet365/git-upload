@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Admission Login</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('imgliab.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .login-box {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 10px;
+            width: 350px;
+        }
+        .login-box h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .login-box p {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .login-box select, .login-box input[type="text"], .login-box input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .login-box input[type="submit"] {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .login-box a {
+            color: rgb(103, 171, 211);
+            text-decoration: none;
+            display: block;
+            margin-top: 15px;
+            text-align: center;
+        }
+        .mmuliabrary {
+            color: white;
+            font-weight: bold;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .mmuliabrary ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .mmuliabrary ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>mmuliabrary</h2>
+        <div class="mmuliabrary">
+            <p>welcome to the student organised portal for liabrary</p>
+            <ul>
+                <li>Please select Student in the Tab 'Select Role'</li>
+                <li>Username: Your roll Number is Username (e.g. 1323xxx)</li>
+                <li>Password: same as your erp portal </li>
+            </ul>
+        </div>
+        <form>
+            <select name="role">
+                <option>Select Role</option>
+                <option>admin</option>
+                <option>faculty</option>
+                <option>Student</option>
+              
+            </select>
+            <input type="text" placeholder="UserName / Roll No / Admission No" name="username">
+            <input type="password" placeholder="Password (Default Password is Roll No)" name="password">
+            <input type="submit" value="Login">
+        </form>
+        <a href="#">visit the creators</a>
+    </div>
+</body>
+</html>
